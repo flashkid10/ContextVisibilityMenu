@@ -1,27 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using AniLyst_5._0.CustomControls;
-using System.Threading;
-using System.Collections;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.ComponentModel;
-using System.Diagnostics;
-using AniLyst_5._0.ItemModel;
 
-namespace AniLyst_5._0
+namespace Project
 {
     public static partial class Utils
     {
@@ -84,19 +64,5 @@ namespace AniLyst_5._0
             return Columns[GVC].Value;
         }
 
-        //private void GridViewColumnVisCheck(MenuItem CB)
-        //{
-        //    int i = CB.Tag.ToInt32();
-        //    if (CB.IsChecked) GRD.Columns.Add(VisColInt[i]);
-        //    else GRD.Columns.Remove(VisColInt[i]);
-
-        //    List<GridViewColumn> Tem = new List<GridViewColumn>();
-        //    foreach (GridViewColumn GVC in GRD.Columns) Tem.Add(GVC);
-        //    foreach (GridViewColumn GVC in Tem) GRD.Columns.Remove(GVC);
-        //    foreach (KeyValuePair<GridViewColumn, int> GVC in VisColGrid) if (Tem.Contains(GVC.Key)) GRD.Columns.Add(GVC.Key);
-        //}
-
-        //public  Dictionary<int, GridViewColumn> VisColInt = new Dictionary<int, GridViewColumn>();
-        //public  Dictionary<GridViewColumn, int> VisColGrid = new Dictionary<GridViewColumn, int>();
     }
 }
