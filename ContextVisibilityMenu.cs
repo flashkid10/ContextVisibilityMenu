@@ -59,10 +59,14 @@ namespace Project
             else GRD.Columns.Remove(GVC);
         }
 
+        public MenuItem GetMenuItem(int Index)
+        {
+            return Columns.GetAtIndex(Index).Value;
+        }
+
         public MenuItem GetMenuItem(GridViewColumn GVC)
         {
             return Columns[GVC].Value;
         }
-
     }
 }
